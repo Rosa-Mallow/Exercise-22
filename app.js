@@ -12,5 +12,5 @@ function fetchAPI() {
   .then(data => {
     const extractedGIF = data.data.images.original.url;
     imageDisplay.innerHTML = `<img src="${extractedGIF}" alt="GIF Result">`;
-  })
+  });
 }
